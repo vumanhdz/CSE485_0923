@@ -1,9 +1,12 @@
 <?php
+
 $arrs = ['PHP', 'HTML', 'CSS', 'JS'];
 
-echo '<table style="border-collapse: collapse;">';
-foreach ($arrs as $item) {
-    echo '<tr style="border: 1px solid black;"><td style="padding: 5px;">' . $item . '</td></tr>';
+echo "<table>";
+echo "<tr>";
+echo "<th>Tên khóa học</th>";
+foreach($arrs as $item) {
+  echo "<td>$item</td>";
 }
-echo '</table>';
-?>
+echo "</tr>";
+echo "</table>";
