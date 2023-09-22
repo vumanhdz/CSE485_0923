@@ -1,0 +1,45 @@
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover{
+    color: rgb(231, 155, 24);
+}
+/* CSS để thay đổi giao diện khi click vào menu */
+.menu h3 {
+    cursor: pointer; /* Biến con trỏ thành bàn tay khi hover */
+    padding: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 25px;
+  }
+  
+  .menu h3 i.fa-solid.fa-chevron-down {
+    transition: transform 0.3s;
+  }
+  
+  .menu h3[aria-expanded="true"] {
+    background-color: lightcoral; /* Màu nền cam nhạt khi menu mở ra */
+  }
+  
+  .menu h3[aria-expanded="true"] i.fa-solid.fa-chevron-down {
+    transform: rotate(180deg); /* Icon mũi tên chỉ xuống xoay khi menu mở ra */
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    padding: 5px 0;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+  }
+  
